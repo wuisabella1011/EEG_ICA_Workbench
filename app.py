@@ -14,8 +14,7 @@ app.py — EEG ICA Workbench 主入口
   - ICA 分量特征分析与筛选
   - 功率谱密度 (PSD) 的定量对比（去噪前后）
 
-向陈志明教授汇报：
-  本工具聚焦于脑连接分析中至关重要却常被忽视的数据预处理环节。
+本工具聚焦于脑连接分析中至关重要却常被忽视的数据预处理环节。
   高质量的 ICA 去噪能够显著降低基于相干性和相位的连接指标的假阳性率，
   从而提升格兰杰因果和 DCM 等高级分析的可信度。
 
@@ -127,8 +126,7 @@ def main():
         ---
 
         <div style="text-align: center; color: #888; font-size: 0.85rem;">
-        EEG ICA Workbench v1.0.0 · 科研级脑电预处理平台 <br>
-        为陈志明教授课题组 — 脑连接分析数据质量保障工具
+        EEG ICA Workbench v1.0.0 · 科研级脑电预处理平台
         </div>
         """,
         unsafe_allow_html=True,

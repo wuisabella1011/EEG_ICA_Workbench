@@ -12,7 +12,6 @@ signal_processor.py — EEG 信号处理核心模块
   - 遵循 MNE-Python 和 FieldTrip 社区约定的命名与数据结构
 
 作者: EEG ICA Workbench 项目组
-向陈志明教授汇报用 — 请关注 PSD 分析部分
 """
 
 import numpy as np
@@ -343,7 +342,8 @@ def run_ica(
     """
     使用 FastICA 算法对 EEG 数据进行独立成分分解。
 
-    算法原理（向陈教授汇报要点）：
+    算法原理：
+
       FastICA 基于互信息极小化准则，通过固定点迭代寻找线性变换 W，
       使得输出 S = W * X 的各分量之间统计独立性最大化。
 
@@ -420,7 +420,7 @@ def calculate_psd(
     """
     使用 Welch 方法估计各通道/分量的功率谱密度。
 
-    科研意义（向陈志明教授汇报重点）：
+    科研意义：
       PSD 是评估信号质量的定量指标。在 ICA 去噪前后对比 PSD，可以：
         1. 量化 α (8–13 Hz) 波段信噪比的改善程度
         2. 验证伪迹去除后高频成分 (>30 Hz) 的衰减是否合理
